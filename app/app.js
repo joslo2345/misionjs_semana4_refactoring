@@ -24,5 +24,10 @@ if is just divisible by 5 set the property trcik and the value BUZZ,
 if is just divisible by 3 set the property trick and the value FIZZ, 
 otherwise set the property trick and the score value. TODO */
 
-const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => FizzbuzzService.applyValidationInExplorer(explorer));
-console.log(explorersInNodeAndFizzBuzzTrick);
+// Modify explorer by reference
+explorersInNode.forEach(explorer => FizzbuzzService.applyValidationInExplorer(explorer));
+console.log(explorersInNode);
+
+// another way to implment this code is to modify FizzbuzzService to return a new explorer object
+//const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => FizzbuzzService.applyValidationInExplorer(explorer));
+//console.log(explorersInNodeAndFizzBuzzTrick);
