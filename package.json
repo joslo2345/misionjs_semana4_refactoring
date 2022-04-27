@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/joslo2345/misionjs_semana4_refactoring#readme",
   "devDependencies": {
-    "jest": "^28.0.2"
+    "jest": "^26.0.0"
   }
 }
