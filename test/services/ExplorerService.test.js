@@ -14,7 +14,7 @@ describe("Unit Test for static methods in ExplorerService" , () => {
     test("Get the quantity of explorers in node mission", () => {
         const explorers = Reader.readJsonFile("./app/explorers.json");
         const numberOfExplorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers,"node");
-        expect(typeof numberOfExplorersInNode).toBe('number');
+        expect(typeof numberOfExplorersInNode).toBe('string');
         expect(numberOfExplorersInNode).toBe(10);
     });
 
