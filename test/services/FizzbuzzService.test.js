@@ -1,6 +1,6 @@
 const FizzbuzzService = require("./../../lib/services/FizzbuzzService")
 
-describe("Unit Test for static method in Reader" , () => {
+describe("Unit Test for static method in FizzbuzzService" , () => {
 
     test("give explorer object a trick attributte" , () => {
         const explorer1 = {name: "Explorer1", score: 1}
