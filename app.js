@@ -1,8 +1,10 @@
 const Reader = require("./lib/utils/Reader");
 const ExplorerService = require("./lib/services/ExplorerService");
+const FizzbuzzService = require("./lib/services/FizzbuzzService");
 
 // Part 1 Read json file ===========================
 const explorers = Reader.readJsonFile("explorers.json");
+//console.log(explorers);
 
 // Part 2: Get the explorers in node mission
 const explorersInNode = ExplorerService.filterByMission(explorers,"node");
@@ -22,24 +24,5 @@ if is just divisible by 5 set the property trcik and the value BUZZ,
 if is just divisible by 3 set the property trick and the value FIZZ, 
 otherwise set the property trick and the score value. TODO */
 
-const assignFizzBuzzTrick = function(explorer){
-    if(explorer.score%5 === 0 && explorer.score%3 === 0){
-        explorer.trick = "FIZZBUZZ";
-        return explorer;
-    }
-    else if (explorer.score%5 === 0){
-        explorer.trick = "BUZZ";
-        return explorer;
-    }
-    else if (explorer.score%3 === 0){
-        explorer.trick = "FIZZ";
-        return explorer;
-    }
-    else{
-        explorer.trick = explorer.score;
-        return explorer;
-    }
-};
-
-const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => assignFizzBuzzTrick(explorer));
-//console.log(explorersInNodeAndFizzBuzzTrick);
+const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => FizzbuzzService.applyValidationInExplorer(explorer));
+console.log(explorersInNodeAndFizzBuzzTrick);

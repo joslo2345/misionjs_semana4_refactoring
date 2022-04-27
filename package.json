@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/joslo2345/misionjs_semana4_refactoring/issues"
   },
-  "homepage": "https://github.com/joslo2345/misionjs_semana4_refactoring#readme"
+  "homepage": "https://github.com/joslo2345/misionjs_semana4_refactoring#readme",
+  "devDependencies": {
+    "jest": "^28.0.2"
+  }
 }
