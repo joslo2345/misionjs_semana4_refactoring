@@ -43,27 +43,27 @@ describe("Unit Test for static methods in ExplorerController" , () => {
         expect(explorersUsernamesInJava[0]).toBe("ajolonauta6");
     });
 
-    test('Return FIZZ if number divisible by 3 , BUZZ if number divisible by 5 , FIZZBUZZ if number disivible by 15, and number if not divisible by 3 or 5 or 15',
-    () => {
-        const number1 = 3;
-        const result1 = ExplorerController.getTrickForNumber(number1);
-        expect(typeof result1).toBe('string');
-        expect(result1).toBe('FIZZ');
+    test("Return FIZZ if number divisible by 3 , BUZZ if number divisible by 5 , FIZZBUZZ if number disivible by 15, and number if not divisible by 3 or 5 or 15",
+        () => {
+            const number1 = 3;
+            const result1 = ExplorerController.getTrickForNumber(number1);
+            expect(typeof result1).toBe("string");
+            expect(result1).toBe("FIZZ");
 
-        const number2 = 5;
-        const result2 = ExplorerController.getTrickForNumber(number2);
-        expect(typeof result2).toBe('string');
-        expect(result2).toBe('BUZZ');
+            const number2 = 5;
+            const result2 = ExplorerController.getTrickForNumber(number2);
+            expect(typeof result2).toBe("string");
+            expect(result2).toBe("BUZZ");
 
-        const number3 = 15;
-        const result3 = ExplorerController.getTrickForNumber(number3);
-        expect(typeof result3).toBe('string');
-        expect(result3).toBe('FIZZBUZZ');
+            const number3 = 15;
+            const result3 = ExplorerController.getTrickForNumber(number3);
+            expect(typeof result3).toBe("string");
+            expect(result3).toBe("FIZZBUZZ");
 
-        const number4 = 7;
-        const result4 = ExplorerController.getTrickForNumber(number4);
-        expect(typeof result4).toBe('number');
-        expect(result4).toBe(7);
-    });
+            const number4 = 7;
+            const result4 = ExplorerController.getTrickForNumber(number4);
+            expect(typeof result4).toBe("number");
+            expect(result4).toBe(7);
+        });
 
 });
